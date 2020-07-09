@@ -1,38 +1,287 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Work+Sans:wght@600&display=swap');
+:root{
+    --background-Gradient: linear-gradient(90deg, rgba(12,6,106,1) 1%, rgba(3,11,27,1) 27%, rgba(11,13,37,1) 100%, rgba(5,7,38,1) 100%);
+    --color: AliceBlue;
+    --container-color: #252527;
+    --background-hover: rgb(49, 49, 49);
+
+  }
+
+  .Container:hover, .Container:active  {
+    background-color:var(--background-hover);
+    transform: scale(1.1);
+    transition: 1s;  
+    cursor: pointer;
+  }
+
+  .ContainerSmall:hover, .ContainerSmall:active {
+    background-color:var(--background-hover);
+    transform: scale(1.1);
+    transition: 1s;  
+    cursor: pointer;
+  }
+
+html{
+  transition: 1s;
+  background:var(--background-Gradient);
+  color: var(--color);
+
+}
+ 
+
+.Body{
+  width: 1300px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.mode{
+  
+  position: relative;
+  text-align: right;
+  right: 100px;
+  top: -115px;
+  font-size: large;
+
+}
+
+.Tittle{
+  position: relative;
+  margin: 50px;
+  right: 10px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.SubTittle{
+  position: relative;
+  left: 40px;
+  top: -40px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.DashBoard{
+  display: inline-flex;
+  justify-content: center;
+  
+}
+
+.DashBoardSmall{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.Container{
+  
+  background-color:var(--container-color);
+  width: 250px;
+  height: 250px;
+  margin: 2.4rem;
+  justify-content: center;
+  margin-top: 0rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: 1s;  
+}
+
+
+#ContainerA{
+  border-top: 4px solid;
+  border-color: #1D75CD;
+
+}
+#ContainerB{
+  border-top: 4px solid;
+  border-color: #64A8EB;
+
+
+}
+#ContainerC{
+  border-top: 4px solid;
+  border-color: #DB2D8A;
+
+
+}
+#ContainerD{
+  border-top: 4px solid;
+  border-color: #C60003;
+
+
+}
+
+.ContainerSmall{
+  display: grid;
+  background-color:var(--container-color);
+  width: 250px;
+  height: 150px;
+  margin: 2.4rem;
+  margin-bottom: 0.1rem;
+  border-radius: 0.5rem;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 98px;
+  justify-items: center;
+  align-items: start;
+  transition: 1s;  
+
+}
+
+.smallIcon{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start:3;
+  transform: scale(1.5);
+  align-self: flex-end;
+}
+
+
+.Views{
+  grid-row-start: 1;
+  grid-row-end: 1;
+  grid-column-start:1;
+  grid-column-end:1;
+  font-size: 1.0rem;
+  margin: 0px;
+  margin-bottom: 0px;
+  align-self: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.smallNumber{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start:1;
+  font-size: 2.8rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  align-self: center;
+}
+
+.Perc{
+  color:mediumseagreen;
+  font-size: 1rem;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column-start:3;
+  grid-column-end:3;
+  align-self: flex-end;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.PercRED{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  color:#ED4447;
+  font-size: 1rem;
+  grid-column-start:3;
+  grid-column-end:3;
+  align-self: flex-end;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.smallArrow{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  transform: scale(2.5) rotate(223deg);
+  grid-column-start:2;
+  grid-column-end:2;
+  align-self: flex-end;
+}
+
+.smallArrowB{
+  grid-row-start: 2;
+  grid-row-end: 2;
+  transform: scale(1.9) ;
+  grid-column-start:2;
+  grid-column-end:2;
+  align-self: flex-end;
+  margin-bottom: 28px;
+  justify-self: end;
+
+}
+
+.Overview{
+  position: relative;
+  left: 37px;
+  font-family: 'Work Sans', sans-serif;}
+
+.facebook{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#facebookIcon{
+  position: relative;
+  top: 39px;
+  left: -30px;
+  transform: scale(1.4);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+.userName{
+  position: relative;
+  top: -45px;
+  right: -15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.NumFollowers{
+  position: relative;
+  top: -70px;
+  font-size: 4rem;
+}
+
+.Followers{
+  position: relative;
+  top: -110px;
+  font-family:'Raleway', sans-serif;;
+}
+
+.today{
+  position: relative;
+  top: -150px;
+  left: 9px;
+  color: aqua;
+  color:mediumseagreen;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.arrow{
+  position: relative;
+  top: -110px;
+  right: 45px;
+  transform: scale(1.9);
+}
+
+.todayRED{
+  position: relative;
+  top: -150px;
+  left: 9px;
+  color:#ED4447;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .DashBoard {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+  }
+  .mode {
+    position: relative;
+    right: 900px;
+    top: -165px;
+  }
+  .Tittle{
+    position: relative;
+    top: 70px;
+  }
+  .DashBoardSmall {
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

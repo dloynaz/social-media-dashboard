@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap');
+
+:root {
+    --round: -19px; 
+    --roundColor: Azure;
+}
+.bar{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(71,133,8,1) 39%, rgba(0,212,255,1) 100%);
+    color:cadetblue;
+    height: 25px;
+    width: 60px;
+    border-radius: 1rem;
+    font-size: 0rem;
+    position: absolute;
+    right: -50px;
+    top: 0px;
+    cursor: pointer;
+}
+
+h6 {
+    position: relative;
+    right: 50px;
+    top: 3px;
+    cursor: pointer;
+    font-family:'Montserrat', sans-serif;
+}
+
+.round {
+    transition: 1s;
+    font-size: 0rem;
+    background-color:var(--roundColor);
+    height: 23px;
+    width: 23px;
+    border-radius: 1rem;
+    position: absolute;
+    right: var(--round);
+    top: 1px;
+    z-index: 5;
+    cursor: pointer;
+}
+
